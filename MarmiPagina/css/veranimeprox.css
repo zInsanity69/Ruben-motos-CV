@@ -1,0 +1,297 @@
+* {
+	box-sizing: border-box;
+}
+
+:root{
+    --negro: #0D0D0D;
+    --rojo: #F20519;
+    --marronOscuro: #A6290D;
+    --marronClaro: #F2BC79;
+    --naranga: #F28705;
+    --gris: #323131b1;
+    --blanco: #ffffff;
+    }
+    
+.lista-anime{
+    background-image: url(/img/fondonegro.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    border-bottom: 5px var(--marronOscuro) solid;
+    border-top: 5px var(--marronOscuro) solid;
+}
+.portada-anime{
+background-color: #ad8a5f;
+height: 90vh;
+display: grid;
+width: auto;
+grid-template-columns: 2fr 10fr;
+
+}
+p{
+margin: 0 0 0 0.5rem;
+}
+#fondo-negro-portada-anime{
+    background-color: #0d0d0d;
+}
+.titulo-anime-sinopsis{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.nombre-anime{
+    font-weight: 600;
+color: var(--negro);
+margin: 1rem 1rem 1rem 0rem;
+transition: font-size 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+.nombre-anime:hover{
+font-size: 2.1rem;
+color: var(--blanco);
+}
+.imagen-botones{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    padding: 2rem 2rem 2rem 5rem;
+    width: fit-content;
+
+}
+.botones-imagen{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    padding-top: 2rem;
+}
+.botones-imagen button{
+border-radius: 50%;
+border: #0D0D0D;
+}
+.imagen-botones img{
+border-radius: 1rem;
+width: 20rem;
+height: 30rem;
+}
+.sinopsis-veranime{
+display: flex;
+flex-direction: column;
+align-items: start;
+justify-content: center;
+}
+#boton-anime{
+    border-radius: 1.5rem;
+    height: fit-content;
+    width: fit-content;
+    background-color: var(--marronOscuro);
+    color: var(--marronClaro);
+    border: none;
+    padding: 0.3rem 1rem 0.3rem 1rem;
+    margin: 0 2rem;
+}
+#emision{
+border-radius: 1rem;
+background-color: rgb(42, 165, 42);
+border: none;
+color: var(--blanco);
+height: fit-content;
+width: fit-content;
+padding: 0.3rem 1rem 0.3rem 1rem;
+display: flex;
+flex-direction: row;
+align-items: center;
+}
+.nombre{
+    background-color: var(--negro);
+    color: aliceblue;
+    border-radius: 2rem;
+    margin: 0.5rem;
+    border: none;
+    padding: 0.3rem 1rem 0.3rem 1rem ;
+}
+.sinopsis-p{
+    color: var(--negro);
+    font-size: larger;
+    text-align: left;
+    padding-top: 1em;
+    width: 50rem;
+}
+#emision svg{
+margin: 0.5rem;
+}
+.estrellas{
+display: flex;
+flex-direction: row;
+text-align: center;
+justify-content: center;
+align-items: center;
+gap: 1rem;
+}
+.estrellas h2{
+color: var(--negro);
+font-size: 2.5rem;
+margin: 1rem;
+font-weight: 600;
+color: var(--negro);
+}
+#seguir{
+    padding: 0.5rem;
+    transition: all 0.1s ease-in-out;
+}
+#seguir:hover{
+    background-color: var(--marronClaro);
+}
+#megusta{
+    padding: 0.5rem;
+    transition: all 0.1s ease-in-out;
+}
+#megusta:hover{
+    background-color: var(--marronClaro);
+    
+}
+#listaDeEspera{
+    padding: 0.5rem;
+    transition: all 0.1s ease-in-out;
+}
+#listaDeEspera:hover{
+    background-color: var(--marronClaro);
+}
+.titulos-sinopsis{
+    font-weight: 600;
+    padding-bottom: 0.5rem;
+    margin-left: 0.5rem;
+    color: var(--negro);
+}
+.botones-categorias{
+margin-left: 0.5rem;
+}
+.tilulo-lista-episodios{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.boton-buscar{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    margin: 1rem;
+}
+.tilulo-lista-episodios h2{
+    color: var(--blanco);
+    margin: 1rem;
+    font-size: 3rem;
+}
+span{
+    color: var(--marronOscuro);
+}
+.boton-buscar{
+    align-items: center;
+    gap: 1rem;
+}
+.boton-filtro-veranime{
+    padding: 0.7;
+    border-radius: 0.7rem;
+    background-color: var(--marronOscuro);
+    color: var(--blanco);
+    border: none;
+}
+.primer-episodio img{
+ border-radius: 1rem;
+ height: auto;
+ width: 30rem;
+ margin: 0rem 2rem 2rem 2rem;
+ opacity: 80%;
+}
+.primer-episodio{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.resto-episodios{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin: 0rem 5rem 2rem 5rem;
+}
+.resto-episodios img{
+    border-radius: 1rem;
+    height: auto;
+    width: 20rem;
+    opacity: 80%;
+}
+.capi-dura{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.ver-icon{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.sinopsis-imagen h2{
+    color: var(--blanco);
+    font-size: 3rem;
+}
+.sinopsis-imagen{
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 5rem 5rem 0rem;
+}
+#cap{
+    color: var(--marronOscuro);
+    margin: 0.5rem 0rem 0rem 0rem;
+    font-weight: 600;
+    font-size: 1.5rem;
+    width: fit-content;
+}
+#dur{
+    color: var(--marronClaro);
+    opacity: 70%;
+    margin: 0rem;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 0.5rem;
+    font-weight: 600;
+    width: auto;
+}
+.proximo-episodio{
+    font-weight: 600;
+    color: green;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+}
+.ver-icon #boton-ver{
+    border-radius: 1rem;
+    background-color: var(--marronOscuro);
+    color: var(--blanco);
+    width: fit-content;
+    padding: 0.2rem 0.7rem 0.2rem 0.7rem;
+    border: none;
+    margin-top: 2rem;
+    font-size: 30px;
+}
+.sinopsis-item{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0rem 1rem 0rem 1rem;
+}
+.sinopsis-item-des{
+    margin: 0rem;
+    text-align: left;
+    color: var(--blanco);
+    opacity: 70%;
+}
+#durp{
+    color: var(--marronClaro);
+    opacity: 70%;
+    margin: 0rem;
+    font-size: 1rem;
+    text-align: center;
+    padding: 0.5rem;
+    font-weight: 600;
+    width: auto;
+}

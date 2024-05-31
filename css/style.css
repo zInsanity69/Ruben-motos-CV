@@ -1,0 +1,449 @@
+*{
+    font-family: "Play", sans-serif;
+    font-style: normal;
+    box-sizing: border-box;  
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+header{
+  background-color: black;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1,h2,h3,h4,h5,p {
+  margin: 0;
+  padding: 0;
+}
+h1{
+  padding: 1rem;
+  text-align: center;
+  font-size: 3rem;
+}
+
+
+.nave {
+    display:grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    width:50%;
+    height:10vh;
+    padding: 1rem 0;
+}
+
+.logo {
+  background-image: url(/img/logo.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 5rem;
+  width: 5rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+
+.menu {
+    display:flex;
+    align-items:center;
+    justify-content:right;
+    gap: 1rem;
+    padding: 0 2rem;
+}
+
+.idioma {
+    font-size: 1.5rem;
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    border: none;
+    height: fit-content;
+    width: fit-content;
+    transition: ease-in-out 0.3s;
+}
+
+.idioma:hover{
+    color: gray;
+}
+
+.contacta {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 5rem;
+  padding: 0.2rem 0.7rem;
+  height: fit-content;
+  width: fit-content;
+  font-size: 1.5rem;
+  transition: ease-in-out 0.3s;
+}
+
+.contacta:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+.contenedor-encabezado {
+  display: grid;
+  grid-template-columns: 1fr 10fr;
+  justify-content: center;
+  background-color: black;
+}
+
+
+.texto-imagen {
+  padding: 1.5rem;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  width: 60%;
+}
+
+.texto-imagen p{
+    font-size: 1.5rem;
+}
+
+
+.foto {
+  background-image: url(/img/foto-perfil.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 20rem;
+  width: 20rem;
+  padding: 1rem 0;
+}
+
+.debajo{
+  height: 30rem;
+  width: 100%;
+  background-image: url(/img/Ciudad.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0rem -5rem;
+}
+
+.about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(20, 19, 19);
+    height: 50vh;
+    width: 100%;
+    color: aliceblue;
+    padding: 11rem 3rem;
+}
+
+.about h2{
+    padding: 0 0 1rem 0;
+    font-size: 3rem;
+    text-align: center;
+}
+.about p{
+    text-align: center;
+    width: 50%;
+    font-size: 1.5rem;
+}
+.exp{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: rgb(0, 0, 0);
+    height: 45vh;
+    width: 100%;
+    color: aliceblue;
+    padding: 3rem;
+}
+
+.frontend{
+  padding: 3rem 2rem;
+  border-right: 0.1rem solid gray;
+  position: relative;
+  bottom: 50%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: aliceblue;
+  color: black;
+  height: 50vh;
+  width: 20%;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.logo_front{
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 50%;
+  height: 5rem;
+  width: 5rem;
+  background-color: black;
+}
+
+.frontend h3{
+  padding-bottom: 1rem;
+  font-size: 2rem;
+}
+.frontend h4{
+  font-size: 1.5rem;
+  margin: 2rem;
+}
+
+.frontend p {
+  font-size: 1.2rem;
+}
+
+.frontend svg{
+  height: 3rem;
+  width: auto;
+}
+.dev_front{
+  transition: all ease-in-out 0.3s;
+}
+.dev_front:hover{
+  transform: scale(1.1);
+}
+
+.backend{
+  padding: 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-left: 0.1rem solid gray;
+  position: relative;
+  bottom: 50%;
+  text-align: center;
+  background-color: aliceblue;
+  color: black;
+  height: 50vh;
+  width: 20%;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.logo_back{
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 50%;
+  height: 5rem;
+  width: 5rem;
+  background-color: black;
+}
+
+.backend h3{
+  padding-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.backend h4{
+  font-size: 1.5rem;
+  margin: 2rem;
+}
+
+.backend p{
+  font-size: 1.2rem;
+}
+
+.backend svg{
+  height: 3rem;
+  width: auto;
+}
+
+.lenguajes_frontend{
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+}
+
+.lenguajes_frontend svg{
+  height: 4rem;
+}
+
+.dev_back{
+  transition: all ease-in-out 0.3s;
+}
+
+.dev_back:hover{
+  transform: scale(1.1);
+}
+
+.lenguajes_backend{
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+}
+
+.lenguajes_backend svg{
+  height: 4rem;
+  width: auto;
+}
+
+.my_proyect{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 50vh;
+  width: 100%;
+  background-color: black;
+  color: aliceblue;
+}
+
+.my_proyect h2{
+  font-size: 4rem;
+  margin: 0 0 5rem 0rem;
+}
+
+.proyectos{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+}
+.proyecto{
+  border-radius: 10px;
+  height: 20rem;
+  width: 30rem;
+  transition: all ease-in-out 0.5s;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: aliceblue;
+  padding: 3rem;
+}
+
+.proyectoMarmi{
+  background-image: url(/img/ProyectoMarmi.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  }
+
+.proyecto{
+  p,button{
+    opacity: 0;
+    transition: all ease-in-out 0.5s;
+    }
+    h3{
+      padding-bottom: 1rem;
+      font-size: 2rem;
+      opacity: 0%;
+      transition: all ease-in-out 0.5s;
+    }
+    button{
+      background-color: rgb(81, 80, 80);
+      color: white;
+      border: 0.2rem solid black;
+      border-radius: 3rem;
+      padding: 0.5rem 1rem;
+      font-size: 1.5rem;
+      margin: 1rem;
+      transition: all ease-in-out 0.3s;
+    }
+    button:hover{
+      background-color: black;
+    }
+    p{
+      font-size: 1.5rem;
+      text-align: center;
+    }
+    a{
+      text-decoration: none;
+      color: aliceblue;
+    }
+  }
+
+.proyecto:hover{
+  p,button{
+    opacity: 100%;
+  }
+  h3{
+    opacity: 100%;
+  }
+  .negro{
+    opacity: 100%;
+  }
+}
+
+.negro{
+  position: absolute;
+  border-radius: 10px;
+  height: 20rem;
+  width: 30rem;
+  transition: all ease-in-out 0.5s;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: aliceblue;
+  padding: 3rem;
+  background-color: rgb(20, 19, 19);
+  opacity: 0%;
+}
+
+.integrador{
+  background-image: url(/img/integrado.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+footer{
+  color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem;
+  height: 20vh;
+  width: 100%;
+  background-color: rgb(20, 19, 19);
+}
+
+.redesSociales {
+  display: flex;
+  gap: 1rem;
+  margin: 1rem;
+}
+
+.sitem {
+  background-color: aliceblue;
+  border: 0.2rem solid black;
+  border-radius: 50%;
+  padding: 0.5rem;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  filter: grayscale(100%);
+  transition: all 0.3s;
+}
+
+.sitem:hover{
+  transform: scale(1.1);
+  filter: grayscale(0%);
+}
+.sitem svg{
+  width: 2rem;
+  height: 2rem;
+}
+
+.sitemtexto {
+  font-size: 1.5rem;
+}
+
+
+
+
+
+

@@ -1,0 +1,555 @@
+:root{
+--negro: #0D0D0D;
+--rojo: #F20519;
+--marronOscuro: #A6290D;
+--marronClaro: #F2BC79;
+--naranga: #F28705;
+--gris: #323131b1;
+--blanco: #ffffff;
+}
+body{
+  font-family: 'Quicksand', sans-serif;
+  background-image: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);;
+
+}
+h1{
+  font-family: 'Red Hat Display', sans-serif;
+  font-weight: 500;
+    text-align: center;
+    color: var(--blanco);
+    font-size: 1.5rem;
+    
+}
+h2,h3,h4{
+  font-family: 'Red Hat Display', sans-serif;
+}
+header{
+background-color: var(--blanco);
+/* background-image: url(../img/fondoNombre.png);
+background-position: center;
+background-repeat: no-repeat;
+background-size: 100%; */
+/* transition: 3s ease-in-out;
+transform: ; */
+}
+h4{
+  font-size: 1.5rem;
+}
+#logoImg{
+  text-align: center;
+width: 15rem;
+}
+.logo{
+text-align: center;
+/* filter: drop-shadow(20px 7px 5px #ffffff44); */
+}
+.navbar{
+    display: grid;
+    grid-template-columns: 2fr 5fr 1fr 1fr;
+    background-color: var(--negro);
+    border-bottom: 3px var(--marronOscuro) solid; ;
+}
+
+.menu{
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-evenly;
+}
+.menu a{
+font-size: 2rem;
+text-decoration: none;
+color: var(--marronOscuro);
+transition: all 0.3s ease-in-out, color 0.3s ease-in-out;
+gap: 1rem;
+
+}
+.menu a:hover{
+transform: scale(1.2);
+color: var(--marronClaro);
+}
+
+.buscar{
+    align-items: end;
+}
+.search-box{
+    width: fit-content;
+    height: fit-content;
+    position: relative;
+  }
+  .input-search{
+    height: 50px;
+    width: 50px;
+    border-style: none;
+    padding: 10px;
+    font-size: 18px;
+    letter-spacing: 2px;
+    outline: none;
+    border-radius: 25px;
+    transition: all .5s ease-in-out;
+    background-color: var(--marronOscuro);
+    padding-right: 40px;
+    color:#F2BC79;
+  }
+  .input-search::placeholder{
+    color:rgba(255,255,255,.5);
+    font-size: 18px;
+    letter-spacing: 2px;
+    font-weight: 100;
+  }
+  .btn-search{
+    width: 50px;
+    height: 50px;
+    border-style: none;
+    font-size: 20px;
+    font-weight: bold;
+    outline: none;
+    cursor: pointer;
+    border-radius: 50%;
+    position: absolute;
+    right: 0px;
+    color:#F2BC79 ;
+    background-color:transparent;
+    pointer-events: painted;  
+  }
+  .btn-search:focus ~ .input-search{
+    width: 300px;
+    border-radius: 0px;
+    background-color: transparent;
+    border-bottom:1px solid rgba(255,255,255,.5);
+    transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+  }
+  .input-search:focus{
+    width: 300px;
+    border-radius: 0px;
+    background-color: transparent;
+    border-bottom:1px solid rgba(255,255,255,.5);
+    transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+  }
+.user a {
+text-decoration: none;
+color: var(--marronOscuro);
+  }
+.user i{
+    padding-right: 0.5rem;
+}
+.user{
+text-align: end;
+padding-right: 1rem;
+}
+.boton{
+transition: font-size 0.3s ease-in-out; 
+}
+.boton:hover{
+color: var(--marronClaro);
+font-size: 1.1rem;
+a{
+  color: var(--marronClaro);
+}
+}
+
+.titulo{
+background-color: var(--gris);
+height: 3rem;
+display:flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+}
+
+.anime{
+display: flex;
+flex-direction: column;
+justify-content: right;
+align-items:first baseline;
+width: auto;
+}
+
+.masvisto h2{
+  color: var(--negro);
+  font-size: 2rem;
+  width: fit-content;
+  padding-left: 2rem;
+}
+.anime span{
+  color: var(--marronOscuro);
+}
+.anime img{
+  height: 25rem;
+  width: auto;
+border-radius: 2rem;
+border: 3px black solid;
+}
+.imagenvi{
+text-align: center;
+width: fit-content;
+}
+
+.etiquetas a{
+  text-decoration: none;
+  background-color: var(--gris);
+  color: var(--blanco);
+  border-radius: 0.5rem;
+}
+.etiquetas{
+display: flex;
+flex-direction: row;
+gap: 1.5rem;
+margin: 0.5rem;
+}
+.categoria {
+  padding: 5px 10px;
+  background-color: var(--gris);
+  color: var(--blanco);
+  border: none;
+  border-radius: 2rem;
+  cursor: pointer;
+  padding: 0.3rem 1rem 0.3rem 1rem;
+  transition: background-color 0.3s ease-in-out;
+
+}
+
+.categoria:hover {
+  background-color: rgb(169, 158, 158);
+}
+
+.categoria:active {
+  background-color: var(--marronClaro);
+}
+
+.ranking{
+background-image: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.masvisto{
+display: grid;
+grid-template-columns: 1fr 1fr;
+align-items: center;
+gap: 3rem;
+background-color:#d8d8d8;
+width: 90%;
+height: 70%;
+border-radius: 5rem;
+padding: 0 3rem;
+transition: transform 0.2s ease-in-out;
+}
+
+.masvisto:hover{
+  transform: scale(1.01,1.01);
+}
+.sinopsis p{
+  width: 80%;
+  margin-bottom: 0rem;
+}
+.sinopsis h3{
+font-size: 2rem;
+}
+
+.checked {
+  color: orange;
+}
+.grid-imagenes{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: center;
+  gap: 2rem;
+  padding: 5rem 7rem;
+}
+.anime-item{
+  width: 20rem;
+  height: 30rem;
+  border: 5px var(--marronOscuro) solid;
+  border-radius: 1rem;
+  text-align: center;
+  color: var(--blanco);
+  overflow: hidden; /* esto sirve par que no se vea lo que se sale del contendor */
+}
+.anime-item:hover p{
+display: block;
+background-color: var(--negro);
+border-radius: 1rem;
+opacity: 0.80;
+}
+.anime-item p{
+display: none;
+}
+
+.anime-fondo-item{
+  display: flex;
+  flex-direction: column;
+  background-image: url(/img/artwork.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  border-top: 5px var(--marronOscuro) solid;
+  justify-content: center;
+  align-items: center;
+}
+.filtros{
+padding-top: 3rem;
+display: flex;
+flex-direction: row;
+justify-content: center;
+gap: 2rem ;
+}
+
+ul {
+  list-style: none;
+}
+
+label {
+  cursor: pointer;
+}
+
+ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  padding: 0.5em;
+}
+
+.filters {
+  width: 250px;
+  box-shadow: 0 0 0.5em 0 rgba(0,0,0,0.3);
+  padding: 1.5em;
+  position: absolute;
+  background-color: var(--gris);
+}
+
+.filters__list li {
+  display: flex;
+  align-items: center;
+  user-select: none;
+  padding-bottom: 1em;
+  line-height: 0;
+  color: var(--marronClaro);
+}
+
+.filters__list li:last-child {
+  padding-bottom: 0;
+}
+
+input[type="checkbox"] {
+  margin-right: 0.5em;
+}
+
+.filters:not(.filters--active) {
+  display: none;
+}
+
+.button {
+  background: var(--marronOscuro);
+  padding: 1em 2em;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  border-radius: 5rem;
+  border: 0;
+  outline: 0;
+  text-align: left;
+  min-width: 150px;
+  display: inline-flex;
+  justify-content: space-between;
+  color: var(--marronClaro);
+  cursor: pointer;
+}
+
+.button::after {
+  font-family: sans-serif;
+  content: "▼";
+  padding-left: 0.5em;
+}
+
+.button--highlight::after {
+  content: "✓";
+}
+.button-pagina{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 0.2rem;
+  padding-bottom: 2rem;
+}
+.button-pagina-item{
+background-color: var(--marronOscuro);
+color: var(--marronClaro);
+border-radius: 0.5rem;
+}
+.body-animes{
+  height: 100vh;
+}
+#fondo-perfil{
+  background-image: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);
+  height: 100vh;
+}
+#fondo-perfil h2{
+  color: var(--blanco);
+  font-size: 3rem;
+  width: fit-content;
+  padding-left: 2rem;
+}
+
+#fondo-perfil span{
+color: var(--marronOscuro);
+}
+
+.imagen-perfil{
+padding-top: 1.5rem;
+text-align: center;
+color: var(--blanco);
+
+}
+.imagen-perfil img{
+  border-radius: 50%;
+  height: 10rem;
+  width: auto;
+}
+
+.anime-item:hover a{
+border-radius: 20px;
+border: 1px solid var(--naranga);
+background-color: var(--marronOscuro);
+color: var(--marronClaro);
+font-size: 12px;
+font-weight: bold;
+padding: 12px 45px;
+letter-spacing: 1px;
+text-transform: uppercase;
+opacity: 1;
+width: fit-content;
+text-decoration: none;
+}
+
+.anime-item a{
+opacity: 0;
+}
+
+.sinopsis a{
+  border-radius: 20px;
+  border: 1px solid var(--naranga);
+  background-color: var(--marronOscuro);
+  color: var(--marronClaro);
+  font-size: 12px;
+  font-weight: bold;
+  padding: 12px 45px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  opacity: 1;
+  width: fit-content;
+  text-decoration: none;
+  margin: 0.5rem;
+}
+.texto-sinopsis{
+  margin: 0.5rem;
+}
+.boton-sinopsis{
+text-align: center;
+}
+
+.anime-item2 {
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr;
+  width:  100%;
+  height: auto;
+  border-radius: 1rem;
+  border: 3px var(--marronOscuro) solid;
+  position: relative; 
+  transition: transform 0.3s ease-in-out;
+}
+
+.anime-item2:hover{
+transform: scale(1.02);
+} 
+
+.contenedor-foto{
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+}
+
+.contenedor-foto img {
+  width: auto;
+  height: 25rem;
+  
+  z-index: 1;
+}
+
+
+.titulo-anime {
+  background-color: #ffffffc6;
+  backdrop-filter: blur(10px);
+  color: black; 
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: fit-content;
+  box-sizing: border-box;
+  z-index: 3;
+  text-align: center;
+  
+}
+
+/* Contenedor de texto */
+.contenedor-texto {
+  background-color: #000000bd;
+  color: white;
+  display: none; 
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 20px; 
+  box-sizing: border-box;
+  z-index: 2;
+  font-size: 1rem;
+}
+.contenedor-foto:hover .contenedor-texto {
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+}
+
+.grid-imagenes a {
+  border-radius: 20px;
+	border: 1px solid var(--naranga);
+	background-color: var(--marronOscuro);
+	color: var(--marronClaro);
+	font-size: 1rem;
+	font-weight: bold;
+	padding: 12px 45px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+  text-decoration: none;
+}
+.contenido{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-filtro{
+  display: none;
+}
+
+.filter-button:hover .menu-filtro{
+  display: block;
+
+}
+.nombre-user{
+font-size: 1rem;
+margin: 1rem;
+}

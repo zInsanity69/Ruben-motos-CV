@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>MarmiAnime</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">   <!-- bootstrap -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-tB5PpvxWuac4w2cK4oqNw0Wvi0UiDA1owxT4gCOxamN2bj8C1D9bdl2nYd5O3/DZUM8+nco2BDbEfc5sA2bDTg==" crossorigin="anonymous" referrerpolicy="no-referrer" />  
+  <link rel="preload" href="/MarmiPagina/css/AnimeStyle.css">
+  <link rel="stylesheet" href="/MarmiPagina/css/AnimeStyle.css">
+  <link rel="preload" href="../css/veranime.css">
+  <link rel="stylesheet" href="../css/veranime.css">
+  <link rel="preload" href="../css/veranimeprox.css">
+  <link rel="stylesheet" href="../css/veranimeprox.css">
+</head>
+<body>
+<header>
+  <section class="navbar">
+    <div class="logo">
+         <a href="/MarmiPagina/index.html">
+        <img id="logoImg" src="/img/NombrelogoBlanco.png" alt="">
+      </a>
+    </div>
+    <nav class="menu">
+      <a href="/MarmiPagina/nav/novedades.html">Novedades</a>
+      <a href="/MarmiPagina/nav/animes.html">Animes</a>
+      <a href="/MarmiPagina/nav/noticias.html">Noticias</a>
+      <a href="/MarmiPagina/nav/ultimos episodios.html">Últimos Capitulos</a>
+    </nav>
+    <div class="user">
+      <div class="boton">
+        <i class="fa-solid fa-user fa-2xl" style="color: #a6290d;"></i>
+        <a href="../User/login.html">Usuario</a>
+      </div>
+    </div>
+    <div class="buscar">
+      <form>
+        <div class="search-box">
+          <button class="btn-search"><i class="fas fa-search"></i></button>
+          <input type="text" class="input-search" placeholder="Buscar...">
+        </div>
+      </form>
+    </div>
+  </section>
+</header>
+<section>
+    <div id="fondo-negro-portada-anime">
+        <div class="portada-anime">
+            <div class="imagen-botones">
+                <img src="../img/fondonegro.jpg" alt="">
+                <div class="botones-imagen">
+                    <button id="megusta"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-heart" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ff2825" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" />
+                      </svg></button>
+                    <button id="seguir"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-check" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00abfb" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M5 12l5 5l10 -10" />
+                      </svg></button>
+                    <button id="listaDeEspera"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-bookmark" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                      <path d="M18 7v14l-6 -4l-6 4v-14a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4z" />
+                    </svg></button>
+                </div>
+            </div>
+
+            <div class="sinopsis-veranime">
+                <div class="titulo-anime-sinopsis">
+                    <h2 class="nombre-anime">Próximamente</h2>
+                    <button id="boton-anime">Anime</button>
+                    <div class="estrellas">
+                    <h2>0.0</h2>
+                    <div class="estrellas-dentro">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <p>0 Votos</p>
+                    </div>
+                    <button id="emision"><div><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-device-tv" width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 7m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v9a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z" />
+                        <path d="M16 3l-4 4l-4 -4" />
+                      </svg></div>Próximamente</button>
+                    </div>
+                </div>
+                <div class="botones-nombres">
+                    <button class="nombre">Próximamente</button>
+                    <button class="nombre">Próximamente</button>
+                </div>
+                    <h3 class="titulos-sinopsis">Sinopsis</h3>
+                <div class="botones-categorias">
+                    <button class="categoria">Próximamente</button>
+                    <button class="categoria">Próximamente</button>
+                    <button class="categoria">Próximamente</button>
+                </div>
+                <p class="sinopsis-p">Próximamente</p>
+            </div>
+        </div>
+    </div>
+  </section>
+  <section class="lista-anime">
+        <div class="tilulo-lista-episodios">
+          <h2>Lista de <Span>Episodios</Span></h2>
+            <div class="boton-buscar">
+              <button class="boton-filtro-veranime"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-sort-descending" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M4 6l9 0" />
+                <path d="M4 12l7 0" />
+                <path d="M4 18l7 0" />
+                <path d="M15 15l3 3l3 -3" />
+                <path d="M18 6l0 12" />
+              </svg>Mayor a menor</button>
+              <div>
+                <form>
+                  <div class="search-box">
+                    <button class="btn-search"><i class="fas fa-search"></i></button>
+                    <input type="text" class="input-search" placeholder="Buscar...">
+                  </div>
+                </form>
+              </div>
+            </div>
+        </div>
+        <div class="primer-episodio">
+          <div>
+            <img src="../img/coming soon.jpg" alt="">
+          </div>
+          <div class="sinopsis-imagen">
+            <h2>[Próximamente]</h2>
+            <div class="capi-dura">
+              <p id="cap">Próximamente</p>
+              <p id="dur">0:00:00</p>
+            </div>
+            <div class="ver-icon">
+              <button id="boton-ver">Ver Ahora</button>
+            </div>
+          </div>
+          <div class="proximo-episodio">
+            <p>Proximos episodios</p>
+            <p>xx/xx/xxxx</p>
+          </div>
+        </div>
+        <div class="resto-episodios">
+          <div class="item-episodios">
+            <img src="../img/coming soon.jpg" alt="">
+            <div class="sinopsis-item">
+              <div class="sinopsis-item-des">
+                <p>Próximamente</p>
+                <p>Próximamente</p>
+              </div>
+              <p id="durp">0:00:00</p>
+            </div>
+          </div>
+          <div class="item-episodios">
+            <img src="../img/coming soon.jpg" alt="">
+            <div class="sinopsis-item">
+              <div class="sinopsis-item-des">
+                <p>Próximamente</p>
+                <p>Próximamente</p>
+              </div>
+              <p id="durp">0:00:00</p>
+            </div>
+          </div>
+          <div class="item-episodios">
+            <img src="../img/coming soon.jpg" alt="">
+            <div class="sinopsis-item">
+              <div class="sinopsis-item-des">
+                <p>Próximamente</p>
+                <p>Próximamente</p>
+              </div>
+              <p id="durp">0:00:00</p>
+            </div>
+          </div>
+        </div>
+  </section>
+  <!-- <section class="segunda-lista-anime">
+        <h2>segunda lista de animes</h2>
+  </section> -->
+<script src="https://kit.fontawesome.com/9a4be5c8bd.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
