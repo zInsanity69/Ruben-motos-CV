@@ -40,7 +40,7 @@ h1{
 }
 
 .logo {
-  background-image: url(./img/logo.png);
+  background-image: url(img/logo.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -111,7 +111,7 @@ h1{
 
 
 .foto {
-  background-image: url(./img/foto-perfil.png);
+  background-image: url(img/foto-perfil.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -123,7 +123,7 @@ h1{
 .debajo{
   height: 30rem;
   width: 100%;
-  background-image: url(./img/Ciudad.png);
+  background-image: url(img/Ciudad.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 0rem -5rem;
@@ -321,7 +321,7 @@ h1{
 }
 
 .proyectoMarmi{
-  background-image: url(./img/ProyectoMarmi.png);
+  background-image: url(img/ProyectoMarmi.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -391,7 +391,7 @@ h1{
 }
 
 .integrador{
-  background-image: url(./img/integrado.png);
+  background-image: url(img/integrado.png);
   background-size: cover;
   background-repeat: no-repeat;
 }
